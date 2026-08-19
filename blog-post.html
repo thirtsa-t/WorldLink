@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8" />
+    <title id="page-title">Blog | WorldLink Supply Chain</title>
+    <meta name="description" content="" id="page-desc" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="assets/images/fav.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.svg" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="assets/css/sal.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <style>
+        .post-hero { background: linear-gradient(135deg, #0a1027 0%, #0f1c3f 100%); padding: 80px 0 60px; color: #fff; }
+        .cat-badge { background: #ff5e14; color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; display: inline-block; margin-bottom: 16px; }
+        .post-hero h1 { font-size: clamp(26px, 5vw, 46px); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+        .post-hero .meta { color: rgba(255,255,255,.65); font-size: 14px; }
+        .post-body { padding: 60px 0; }
+        .featured-img { width: 100%; max-height: 480px; object-fit: cover; border-radius: 12px; margin-bottom: 40px; }
+        .blog-content { font-size: 17px; line-height: 1.85; color: #333; }
+        .blog-content h2 { font-size: 26px; font-weight: 700; margin: 36px 0 16px; color: #0a1027; }
+        .blog-content h3 { font-size: 21px; font-weight: 600; margin: 28px 0 12px; }
+        .blog-content p { margin-bottom: 20px; }
+        .blog-content ul, .blog-content ol { padding-left: 24px; margin-bottom: 20px; }
+        .blog-content li { margin-bottom: 8px; }
+        .blog-content blockquote { border-left: 4px solid #ff5e14; padding: 16px 24px; background: #fff8f5; margin: 28px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #555; }
+        .tag { display: inline-block; background: #f0f4ff; color: #3b52a0; padding: 4px 12px; border-radius: 20px; font-size: 13px; margin: 4px; }
+        .share-box { background: #0a1027; color: #fff; padding: 32px; border-radius: 12px; margin-top: 40px; text-align: center; }
+        .share-btn { display: inline-block; padding: 10px 22px; border-radius: 6px; font-weight: 600; text-decoration: none; margin: 6px; color: #fff; font-size: 14px; }
+        .blog-loading { text-align: center; padding: 80px 20px; color: #888; font-size: 16px; }
+        .blog-loading .spinner { width: 40px; height: 40px; border: 4px solid #f0f0f0; border-top: 4px solid #ff5e14; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"><div class="loader-icon"><img src="assets/images/logo/loder.png" alt="WorldLink" /></div></div>
+            <div class="txt-loading">
+                <span data-text-preloader="W" class="letters-loading"> W </span>
+                <span data-text-preloader="O" class="letters-loading"> O </span>
+                <span data-text-preloader="R" class="letters-loading"> R </span>
+                <span data-text-preloader="L" class="letters-loading"> L </span>
+                <span data-text-preloader="D" class="letters-loading"> D </span>
+                <span data-text-preloader="L" class="letters-loading"> L </span>
+                <span data-text-preloader="I" class="letters-loading"> I </span>
+                <span data-text-preloader="N" class="letters-loading"> N </span>
+                <span data-text-preloader="K" class="letters-loading"> K </span>
+            </div>
+        </div>
+        <button class="tj-primary-btn">Cancel Preloader</button>
+    </div>
+
+    <!-- Offcanvas -->
+    <div id="tj-overlay-bg2" class="tj-overlay-canvas"></div>
+    <div class="tj-offcanvas-area">
+        <div class="tj-offcanvas-header d-flex align-items-center justify-content-between">
+            <div class="logo-area text-center"><a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" /></a></div>
+            <div class="offcanvas-icon"><a id="canva_close" href="#"><i class="fa-light fa-xmark"></i></a></div>
+        </div>
+        <div class="tj-search-box">
+            <form action="#"><input type="text" class="form-control-1" name="search" placeholder="Search" /><a href="#"><i class="fal fa-search"></i></a></form>
+        </div>
+        <nav class="right_menu_togle mobile-navbar-menu d-lg-none" id="mobile-navbar-menu"></nav>
+        <div class="contact-info-list">
+            <h4 class="offcanvas-title">Contact info</h4>
+            <div class="contact-box">
+                <div class="contact-icon"><i class="fa-light fa-location-dot"></i></div>
+                <div class="contact-link"><span class="d-block">Location:</span><p>Kigali, Kisimenti, Rukiri I, Remera</p></div>
+            </div>
+            <div class="contact-box contact-box1">
+                <div class="contact-icon"><i class="flaticon-email-2"></i></div>
+                <div class="contact-link"><span class="d-block">Email us:</span><a href="mailto:kigali@worldlinksupplychain.com">kigali@worldlinksupplychain.com</a></div>
+            </div>
+            <div class="contact-box">
+                <div class="contact-icon"><i class="flaticon-telephone"></i></div>
+                <div class="contact-link"><span class="d-block">Call us:</span><a href="tel:+250788348302">+250 788 348 302</a></div>
+            </div>
+        </div>
+        <div class="tj-offcanvas-icon-list">
+            <h4 class="offcanvas-title">Social Item</h4>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="tj-header-section" id="header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bg-color d-flex flex-wrap">
+                        <div class="logo-area"><div class="logo-box"><a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" /></a></div></div>
+                        <div class="header-content-area">
+                            <div class="header-topbar">
+                                <div class="topbar-content-area d-flex flex-wrap align-items-center justify-content-between">
+                                    <div class="header-content-left"><span>Mon - Fri: 8 am - 5 pm, Saturday: Closed</span></div>
+                                    <div class="header-content-right">
+                                        <div class="header-social-icon">
+                                            <ul class="list-gap social-list">
+                                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-content d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="mobile-logo-area d-lg-none"><a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" /></a></div>
+                                <div class="tj-main-menu d-lg-block d-none text-end" id="main-menu">
+                                    <ul class="main-menu">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="project.html">Projects</a></li>
+                                        <li class="current-menu-item"><a class="active" href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-menu-select d-flex align-items-center justify-content-end">
+                                    <div class="header-language"></div>
+                                    <div class="tj-header-button d-none d-lg-block"><a class="tj-header-btn" href="contact.html">Track Order <i class="flaticon-right-1"></i></a></div>
+                                    <div class="tj-hambagur-icon d-lg-none"><a class="canva_expander nav-menu-link menu-button" href="#"><span class="dot1"></span><span class="dot2"></span><span class="dot3"></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Hero -->
+    <section class="post-hero" id="post-hero">
+        <div class="container">
+            <div class="blog-loading"><div class="spinner"></div>Loading post...</div>
+        </div>
+    </section>
+
+    <!-- Post Body -->
+    <section class="post-body">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" id="post-content">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="tj-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget footer1_col_1 footer-content-info" data-bg-image="assets/images/banner/footer-shape.png">
+                        <a href="index.html"><img src="assets/images/logo/footer-logo.png" alt="Logo" /></a>
+                        <p>Your trusted partner in global logistics and supply chain solutions.</p>
+                        <div class="footer-social-icon">
+                            <ul class="list-gap">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget footer1_col_2 widget_nav_menu">
+                        <div class="footer-title"><h5 class="title">Our Services</h5></div>
+                        <div class="widget-menu">
+                            <ul>
+                                <li><a href="service-details.html?type=air"><i class="flaticon-plus"></i> Air Freight</a></li>
+                                <li><a href="service-details.html?type=ocean"><i class="flaticon-plus"></i> Ocean Freight</a></li>
+                                <li><a href="service-details.html?type=road"><i class="flaticon-plus"></i> Road Transport</a></li>
+                                <li><a href="service-details.html?type=rail"><i class="flaticon-plus"></i> Rail Freight</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget footer1_col_3 widget_nav_menu">
+                        <div class="footer-title"><h5 class="title">Useful Links</h5></div>
+                        <div class="widget-menu">
+                            <ul>
+                                <li><a href="about.html"><i class="flaticon-plus"></i> About Us</a></li>
+                                <li><a href="blog.html"><i class="flaticon-plus"></i> News & Blog</a></li>
+                                <li><a href="contact.html"><i class="flaticon-plus"></i> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget footer1_col_4 footer-contact-info">
+                        <div class="footer-title"><h5 class="title">Contact Info</h5></div>
+                        <div class="widget-contact">
+                            <div class="contact-list">
+                                <ul class="list-gap">
+                                    <li><i class="flaticon-placeholder"></i> Kigali, Kisimenti, Rukiri I, Remera</li>
+                                    <li><i class="flaticon-phone-call"></i><a href="tel:+250788348302">+250 788 348 302</a></li>
+                                    <li><i class="flaticon-email-2"></i><a href="mailto:kigali@worldlinksupplychain.com">kigali@worldlinksupplychain.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copyright-area">
+                            <div class="copyright-target"><p>Copyright &copy; 2026 <a href="#">WorldLink Supply Chain Ltd.</a> All Rights Reserved.</p></div>
+                            <div class="copyright-menu"><ul class="list-gap"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms & Conditions</a></li></ul></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <div class="logiland-scroll-top progress-done">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 71.1186px;"></path>
+        </svg>
+        <div class="logiland-scroll-top-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi">
+                <path fill="currentColor" d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/sal.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
+
+    <script>
+        const BLOG_SERVER = 'http://localhost:3000';
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+
+        if (!slug) {
+            window.location.href = 'blog.html';
+        }
+
+        fetch(BLOG_SERVER + '/api/posts/' + slug)
+            .then(res => {
+                if (!res.ok) throw new Error('Not found');
+                return res.json();
+            })
+            .then(post => {
+                // Update page title and meta
+                document.getElementById('page-title').textContent = (post.seo_title || post.title) + ' | WorldLink Supply Chain';
+                document.getElementById('page-desc').setAttribute('content', post.seo_description || '');
+
+                // Render hero
+                document.getElementById('post-hero').innerHTML = `
+                    <div class="container">
+                        <span class="cat-badge">${post.category || 'Logistics'}</span>
+                        <h1>${post.title}</h1>
+                        <div class="meta">
+                            By <strong>WorldLink Supply Chain</strong> &nbsp;•&nbsp;
+                            ${new Date(post.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                            ${post.tags ? ' &nbsp;•&nbsp; ' + post.tags : ''}
+                        </div>
+                    </div>`;
+
+                // Render content
+                const contentHTML = marked.parse(post.content || '');
+                const pageURL = window.location.href;
+
+                document.getElementById('post-content').innerHTML = `
+                    ${post.featured_image ? `<img class="featured-img" src="${BLOG_SERVER}${post.featured_image}" alt="${post.title}">` : ''}
+                    <div class="blog-content">${contentHTML}</div>
+                    ${post.tags ? `<div style="margin-top:40px;padding-top:24px;border-top:1px solid #eee"><strong>Tags: </strong>${post.tags.split(',').map(t => `<span class="tag">${t.trim()}</span>`).join('')}</div>` : ''}
+                    <div class="share-box">
+                        <h4 style="margin-bottom:16px;font-size:18px">Share this article</h4>
+                        <a class="share-btn" style="background:#1877f2" href="https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageURL)}" target="_blank">Facebook</a>
+                        <a class="share-btn" style="background:#1da1f2" href="https://twitter.com/intent/tweet?url=${encodeURIComponent(pageURL)}&text=${encodeURIComponent(post.title)}" target="_blank">Twitter / X</a>
+                        <a class="share-btn" style="background:#0a66c2" href="https://linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageURL)}" target="_blank">LinkedIn</a>
+                        <a class="share-btn" style="background:#25d366" href="https://api.whatsapp.com/send?text=${encodeURIComponent(post.title + ' ' + pageURL)}" target="_blank">WhatsApp</a>
+                    </div>
+                    <div style="margin-top:32px">
+                        <a href="blog.html" style="color:#ff5e14;font-weight:600;text-decoration:none">← Back to Blog</a>
+                    </div>`;
+            })
+            .catch(() => {
+                document.getElementById('post-hero').innerHTML = `<div class="container"><h1>Post not found</h1></div>`;
+                document.getElementById('post-content').innerHTML = `<p><a href="blog.html">← Back to Blog</a></p>`;
+            });
+    </script>
+</body>
+</html>
