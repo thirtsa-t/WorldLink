@@ -8,7 +8,7 @@ const fse = require('fs-extra');
 const { getDB } = require('./db/db');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ── FILE UPLOAD SETUP ─────────────────────────────────────────
 const storage = multer.diskStorage({
